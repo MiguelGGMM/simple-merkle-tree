@@ -151,4 +151,8 @@ describe("ClaimManager", function () {
       expect(await _claimManager.verifyClaim(accounts[0], (1000 * (10 ** 6)).toString(), _merkleTimestamp, _merkleTreeObj.getProof(_leafs[0]))).to.be.equal(true, "Unexpected failure");
     })
   })
+
+  //TODO buy token on uniswap
+  //TODO fund contract
+  //TODO test real claim
 });
